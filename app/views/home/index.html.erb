@@ -1,2 +1,13 @@
 <h1>Web Application #Bootstrap #Rails_Admin</h1>
 <p>Find me in app/views/home/index.html.erb</p>
+<%if user_signed_in? %>
+    <p><%= "User #{current_user.email} has a session started" %></p>
+    <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+    
+    <%else%>
+    <p> Please
+    <% link_to " Sign in ", new_user_session_path %>
+    or
+    <% link_to " Sign up", new_user_registration_path %>
+    </p>
+<%end%>

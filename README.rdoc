@@ -21,8 +21,12 @@ Things you may want to cover:
 
 * Deployment instructions
 
+<<<<<<< HEAD
 
 
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+=======
+* 
+>>>>>>> 99e1f817161fdb404a5daedf0a6f1c71e17ce62a

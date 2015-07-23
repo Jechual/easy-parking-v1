@@ -1,0 +1,18 @@
+<%= simple_form_for @service, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= error_span(@service[:name]) %>
+  <%= f.input :description %>
+  <%= error_span(@service[:description]) %>
+  <%= f.input :schedule %>
+  <%= error_span(@service[:schedule]) %>
+  <%= f.input :price %>
+  <%= error_span(@service[:price]) %>
+  <%= f.input :contact %>
+  <%= error_span(@service[:contact]) %>
+  <%= f.input :company_id %>
+  <%= error_span(@service[:company_id]) %>
+
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                services_path, :class => 'btn btn-default' %>
+<% end %>

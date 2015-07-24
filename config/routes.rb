@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :services
   resources :companies
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
@@ -7,7 +6,6 @@ Rails.application.routes.draw do
   get 'home/index'
 
   resources :products
-  resources :categories
   get 'home/index'
 
 
@@ -63,8 +61,7 @@ Rails.application.routes.draw do
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  #     #   end
 
 root 'home#index'
 end

@@ -1,13 +1,11 @@
 Rails.application.routes.draw do
-  resources :services
-  resources :companies
+  resources :parkings
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   devise_for :users
   resources :products
   get 'home/index'
 
   resources :products
-  resources :categories
   get 'home/index'
 
 

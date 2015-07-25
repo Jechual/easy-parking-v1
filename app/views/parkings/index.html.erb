@@ -1,9 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Parkings</h1>
+<h1>Parkings Listing</h1> 
 
 <table>
-  <thead>
+  <thead border="1">
     <tr>
       <th>Name</th>
       <th>Address</th>
@@ -19,7 +19,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody border=1> 
     <% @parkings.each do |parking| %>
       <tr>
         <td><%= parking.name %></td>

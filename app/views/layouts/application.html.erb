@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "Easy Parking" %></title>
+ <title><%= content_for?(:title) ? yield(:title) : "Easy Parking" %></title>
     <%= csrf_meta_tags %>
  
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -49,6 +49,8 @@
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Parking", parkings_path  %></li>
+            <li><%= link_to "Customers", customers_path  %></li>
+            <li><%= link_to "Ratings", ratings_path  %></li>
           </ul>
         </div>
       </div>
@@ -62,17 +64,19 @@
         </div>
         <div class="col-lg-3">
           <div class="well sidebar-nav">
-            <h3>Sidebar</h3>
+            <h3>Menus</h3>
             <ul class="nav nav-list">
-              <li class="nav-header">Sidebar</li>
+            <!--  <li class="nav-header">Menus</li> -->
             <li><%= link_to "Parking", parkings_path  %></li>
+            <li><%= link_to "Customers", customers_path  %></li>
+            <li><%= link_to "Ratings", ratings_path  %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
       </div><!--/row-->
 
       <footer>
-        <p>&copy; D 2015</p>
+        <p>&copy; Derechos Reserved PANIC 2015</p>
       </footer>
 
     </div> <!-- /container -->

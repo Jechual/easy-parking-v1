@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idrating: 1.5
+  point: 1
+  active: false
+  comment: MyText
+  parking: 
+
+two:
+  idrating: 1.5
+  point: 1
+  active: false
+  comment: MyText
+  parking: 

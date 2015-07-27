@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  idcustomer: 1.5
+  lastname: MyString
+  name: MyString
+  birthdate: 2015-07-26
+  type: 
+  celular: 1.5
+  dni: 1
+  active: false
+  hobbies: MyText
+
+two:
+  idcustomer: 1.5
+  lastname: MyString
+  name: MyString
+  birthdate: 2015-07-26
+  type: 
+  celular: 1.5
+  dni: 1
+  active: false
+  hobbies: MyText

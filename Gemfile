@@ -42,6 +42,7 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   
+
   
   #bootstrap frontend framework gem
   gem 'simple_form'
@@ -52,6 +53,9 @@ group :development, :test do
   gem 'devise'
   #management gem
   gem 'rails_admin'
+  gem 'compass'
+
+
 end
 
-# HOLA MUNDO
+

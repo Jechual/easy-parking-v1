@@ -1,0 +1,27 @@
+<%= simple_form_for @customer, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :idcustomer %>
+    <%= f.input :lastname %>
+  <%= error_span(@customer[:lastname]) %>
+    <%= f.input :name
+  <%= error_span(@customer[:name]) %>
+    <%= f.input :birthdate, label: "Date of Birth", as: :string, start_year: Time.now.year - 90, end_year: Time.now.year - 8, order: [:day, :month, :year] %>
+    <%= f.input :celular %>
+  <%= error_span(@customer[:celular]) %>
+    <%= f.input :dni %>
+  <%= error_span(@customer[:dni]) %>    
+    <%= f.input :category %>
+    <%= f.input :active, as: :boolean, checked_value: true, unchecked_value: false %>
+    <%= f.input :hobbies, as: :text %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit  %>
+      <%= f.button :submit, :class => 'btn-primary' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                customers_path, :class => 'btn btn-default' %>
+  </div>
+<% end %>
+

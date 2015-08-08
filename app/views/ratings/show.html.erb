@@ -1,18 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Idrating:</strong>
-  <%= @rating.idrating %>
+  <strong>Date:</strong>
+  <%= @rating.date %>
 </p>
 
 <p>
-  <strong>Point:</strong>
-  <%= @rating.point %>
-</p>
-
-<p>
-  <strong>Active:</strong>
-  <%= @rating.active %>
+  <strong>Score:</strong>
+  <%= @rating.score %>
 </p>
 
 <p>
@@ -21,8 +16,13 @@
 </p>
 
 <p>
+  <strong>Active:</strong>
+  <%= @rating.active %>
+</p>
+
+<p>
   <strong>Parking:</strong>
-  <%= @rating.parking %>
+  <%= @rating.parking.name %>
 </p>
 
 <%= link_to 'Edit', edit_rating_path(@rating) %> |

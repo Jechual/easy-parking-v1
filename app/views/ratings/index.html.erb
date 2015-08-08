@@ -5,10 +5,10 @@
 <table>
   <thead>
     <tr>
-      <th>Idrating</th>
-      <th>Point</th>
-      <th>Active</th>
+      <th>Date</th>
+      <th>Score</th>
       <th>Comment</th>
+      <th>Active</th>
       <th>Parking</th>
       <th colspan="3"></th>
     </tr>
@@ -17,11 +17,11 @@
   <tbody>
     <% @ratings.each do |rating| %>
       <tr>
-        <td><%= rating.idrating %></td>
-        <td><%= rating.point %></td>
-        <td><%= rating.active %></td>
+        <td><%= rating.date %></td>
+        <td><%= rating.score %></td>
         <td><%= rating.comment %></td>
-        <td><%= rating.parking %></td>
+        <td><%= rating.active %></td>
+        <td><%= rating.parking.name %></td>
         <td><%= link_to 'Show', rating %></td>
         <td><%= link_to 'Edit', edit_rating_path(rating) %></td>
         <td><%= link_to 'Destroy', rating, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  resources :services
   resources :ratings
+  resources :services
   resources :customers
   resources :parkings
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
